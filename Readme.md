@@ -260,7 +260,7 @@ We try different Convolutional Networks[^2][^3][^4] to extract the features for 
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.821 | 12
+| 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 9
 | 43 | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7
 | 53 | 2 | CosineEmbeddingLoss | [ResNet101](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet101) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 14
 | 63 | 2 | CosineEmbeddingLoss | [ResNext50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnext50_32x4d)| 1e-4 | 14 | Not | Yes | Yes | **0.826** | 12
@@ -342,5 +342,5 @@ From the conclusions obtained, the next logical steps would be:
 [^8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3MjgwMzE5XX0=
+eyJoaXN0b3J5IjpbLTE4Mjc0MDkwNzUsMjc3MjgwMzE5XX0=
 -->
