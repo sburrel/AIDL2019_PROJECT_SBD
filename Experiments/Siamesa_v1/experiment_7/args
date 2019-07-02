@@ -1,0 +1,23 @@
+class Args:
+
+    frontal_images_directories = "gdrive/My Drive/2019_AIDL_TEAM4/colab_face_detection_siamesa/dataset-cfp/Protocol/image_list_F.txt"
+    profile_images_directories = "gdrive/My Drive/2019_AIDL_TEAM4/colab_face_detection_siamesa/dataset-cfp/Protocol/image_list_P.txt"
+    split_main_directory = "gdrive/My Drive/2019_AIDL_TEAM4/colab_face_detection_siamesa/dataset-cfp/Protocol/Split"
+    split_traindata = ["01", "02", "03", "04", "05", "06"]
+    split_valdata = ["07", "08"]
+    split_testdata = ["09", "10"]
+    dataset_root = "gdrive/My Drive/2019_AIDL_TEAM4/colab_face_detection_siamesa"
+    dataset= "CFPDataset"
+    lr = float(1e-4)
+    weight_decay = float(0.0005)
+    momentum = float(0.9)
+    betas = (0.9, 0.999)
+    batch_size = int(14)
+    workers = int(8)
+    start_epoch = int(0)
+    epochs = int(7)
+    #save_every = int(2)
+    pretrained = True
+    siamese_linear = True
+    data_aug = True
+    resume = "checkpoint_e4"

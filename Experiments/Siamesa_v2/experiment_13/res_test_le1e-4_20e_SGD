@@ -1,0 +1,3 @@
+TEST Epoch [20]: [0/200]  Accuracy: [0.5714]
+TEST Epoch [20]: [100/200]  Accuracy: [0.7857]
+Average test accuracy: 0.7500024999999999

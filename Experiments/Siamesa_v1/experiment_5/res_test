@@ -1,0 +1,20 @@
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:1386: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+
+TEST Epoch [3]: [0/200]  Loss: [0.8077]; Accuracy: [0.2857142857142857]
+TEST Epoch [3]: [14/200]  Loss: [0.7476]; Accuracy: [0.35714285714285715]
+TEST Epoch [3]: [28/200]  Loss: [0.3638]; Accuracy: [1.0]
+TEST Epoch [3]: [42/200]  Loss: [0.3723]; Accuracy: [1.0]
+TEST Epoch [3]: [56/200]  Loss: [0.4701]; Accuracy: [0.5714285714285714]
+TEST Epoch [3]: [70/200]  Loss: [0.7432]; Accuracy: [0.2857142857142857]
+TEST Epoch [3]: [84/200]  Loss: [0.5056]; Accuracy: [0.8571428571428571]
+TEST Epoch [3]: [98/200]  Loss: [0.4410]; Accuracy: [1.0]
+TEST Epoch [3]: [112/200]  Loss: [0.9917]; Accuracy: [0.14285714285714285]
+TEST Epoch [3]: [126/200]  Loss: [0.3838]; Accuracy: [1.0]
+TEST Epoch [3]: [140/200]  Loss: [0.3734]; Accuracy: [1.0]
+TEST Epoch [3]: [154/200]  Loss: [0.6352]; Accuracy: [0.42857142857142855]
+TEST Epoch [3]: [168/200]  Loss: [0.5155]; Accuracy: [0.5714285714285714]
+TEST Epoch [3]: [182/200]  Loss: [0.4319]; Accuracy: [1.0]
+TEST Epoch [3]: [196/200]  Loss: [0.4207]; Accuracy: [1.0]
+Average test accuracy: 0.7182142857142857
+
