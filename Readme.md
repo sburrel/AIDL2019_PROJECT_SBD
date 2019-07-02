@@ -2,11 +2,14 @@
 ## Main Goal
 The task that the designed neural networks  have to perform is: given two images, state if they are from the same identity or not.
 ### Same identity
+
 ![Robert De Niro](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/dataset-cfp/Data/Images/407/frontal/02.jpg?raw=true)  ![Robert De Niro](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/dataset-cfp/Data/Images/407/profile/02.jpg?raw=true)
 ### Different identity
+
 ![Jim Carrey](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/dataset-cfp/Data/Images/230/frontal/08.jpg?raw=true)![Adam Sandler](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/dataset-cfp/Data/Images/006/frontal/02.jpg?raw=true)
 ## Data set
 The used data set is Celebrities in Frontal-Profile. The data set contains 10 frontal and 4 profile images of 500 individuals. Similar to LFW, it has 10 splits defined, each containing 350 same and 350 not-same pairs. This data set is to be used for face verification.
+
 ![Sample Images from Celebrities in Frontal-Profile (CFP)](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/CFP.png?raw=true)
 
 As Sengupta et al. [^1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
@@ -20,7 +23,10 @@ In order to perform the verification task each one of the images passes through 
 ![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses1.png?raw=true)![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses2.png?raw=true)
 
 ### Architecture 1
-![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1.png?raw=true)Next, we include , as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
+
+![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1.png?raw=true)
+Next, we include , as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
+
 ```javascript
 import torch
 from torch import nn
@@ -66,8 +72,10 @@ class SiameseDecision(nn.Module):
 
 #### Architecture 1, variation
 We explore a slight variation of the first architecture, moving one of the fully connected layers to the Siamese's Networks to extract a more compact representation of the features.
+
 ![Architecture 1, variation](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1_var.png?raw=true)
 Below, we include, as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
+
 ```javascript
 class SiameseLinearDecision(nn.Module):
     """
@@ -105,8 +113,10 @@ class SiameseLinearDecision(nn.Module):
 ```
 
 ### Architecture 2
+
 ![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2.png?raw=true)
 Next, we include, as an example, the code sniped with the implemented model at version 7 (all the versions are described in paragraph: How to reproduce the experiments).
+
 ```javascript
 import torch
 from torch import nn
@@ -138,8 +148,10 @@ class SiameseCosine(nn.Module):
 ```
 
 #### Architecture 2 during testing or inference
+
 ![Architecture 2 during testing or inference](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2_test.png?raw=true)
 To obtain the threshold, we first compute all the cosine similarities for the pairs of images in the validation test and extract the 5 percentile for same identities pairs of images and  the 95 percentile for different identities pairs of images. Second, we calculate the threshold (with only one decimal precision) between the 5 percentile for same identities pairs of images and 95 percentile for different identities pairs of images. To obtain the threshold with the second and the third decimal precision, we iterate between the threshold obtained previously plus/minus half of its precision with increments of one unit of the new precision. For more clarity, the sniped code is included bellow.
+
 ```javascript
 import numpy as np
 # Compute similarities and obtain limit percentiles
@@ -148,6 +160,7 @@ pos_5 = np.percentile(sim_pos,5)
 neg_95 = np.percentile(sim_neg,95)
 
 ```
+
 ```javascript
 # Select treshold
 best_acc = 0
@@ -207,6 +220,7 @@ For the second architecture we have used the [Cosine Embedding Loss](https://pyt
  
 ### Results Obtained
 We start studying the influence of data augmentation and the use or not of the pretrained weights at the convolutional network for Architecture 1 and Binary Cross Entropy Loss (see results bellow).
+
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 01 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | Not | Yes | Not | 0.711 | 4
@@ -217,9 +231,11 @@ We start studying the influence of data augmentation and the use or not of the p
 | 06 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | - |Not | Not | 0.504 | 2   
 | 07 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not | Yes | Yes | 0.713 | 4
 | 08 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | - | Not | Yes | 0.501 |  1
+
 Better results are obtained when the training starts with the pretrained weights of the convolutional network.
 
 We continue, exploring the influence of data augmentation ( see results bellow).
+
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 11 | 1 |  CELoss | VGG16's Convolutionals | 1e-4 | 20 | Not | Yes | Not | 0.793 | 11 
@@ -234,19 +250,23 @@ We continue, exploring the influence of data augmentation ( see results bellow).
 Data augmentation increases accuracy around 1% when the input features of the decision network are extracted from the convolutional layers of the VGG16 and the Cross Entropy Loss is used.
 Data augmentation increases accuracy around 2% when the features are extracted from the convolutional layers of the VGG16 and the Cosine Embedding Loss is used, without freezing any layers.
 
-We try to fine tune only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% , see table bellow.
+We try to fine tune only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% . See table bellow.
+
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 33 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% bottom layers | Yes | Yes | 0.746 | 13
         
 We try different Convolutional Networks[^2][^3][^4] to extract the features for Architecture 2. See results bellow.
+
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.821 | 12
 | 43 | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7
 | 53 | 2 | CosineEmbeddingLoss | [ResNet101](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet101) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 14
 | 63 | 2 | CosineEmbeddingLoss | [ResNext50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnext50_32x4d)| 1e-4 | 14 | Not | Yes | Yes | **0.826** | 12
+
 The best results are obtained with ResNext50, although  it is the network with the least number of parameters. ResNext is an architecture inspired in ResNet and Inception. It has a similar architecture to Inception, but adding the Residuals.
+
 [^2]:Karen Simonyan and Andrew Zisserman. ["Very Deep Convolutional Networks for large scale Image Recognition"](https://arxiv.org/pdf/1409.1556.pdf). ICLR, 2015.
 [^3]:He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. ["Deep residual learning for image recognition."](https://arxiv.org/pdf/1512.03385.pdf). CVPR, 2016.
 [^4]:Xie, Saining, Ross Girshick, Piotr Dollár, Zhuowen Tu, and Kaiming He.  ["Aggregated residual transformations for deep neural networks."](https://arxiv.org/pdf/1611.05431.pdf) . CVPR, 2017.
@@ -322,5 +342,5 @@ From the conclusions obtained, the next logical steps would be:
 [^8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQwNjgxMSwtMjEyNjc4MDI4N119
+eyJoaXN0b3J5IjpbMjc3MjgwMzE5LC0yMTI2NzgwMjg3XX0=
 -->
