@@ -8,6 +8,7 @@ The task that the designed neural networks  have to perform is: given two images
 ## Data set
 The used data set is Celebrities in Frontal-Profile. The data set contains 10 frontal and 4 profile images of 500 individuals. Similar to LFW, it has 10 splits defined, each containing 350 same and 350 not-same pairs. This data set is to be used for face verification.
 ![Sample Images from Celebrities in Frontal-Profile (CFP)](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/CFP.png?raw=true)
+
 As Sengupta et al. [^1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
 [^1]: S. Sengupta, J.C. Cheng, C.D. Castillo, V.M. Patel, R. Chellappa and  D.W. Jacobs.  ["Frontal to Profile Face Verification in the Wild"](http://www.cfpw.io/paper.pdf). IEEE Conference on Applications of Computer Vision, 2016.
 
@@ -251,6 +252,7 @@ The best results are obtained with ResNext50, although  it is the network with t
 [^4]:Xie, Saining, Ross Girshick, Piotr Dollár, Zhuowen Tu, and Kaiming He.  ["Aggregated residual transformations for deep neural networks."](https://arxiv.org/pdf/1611.05431.pdf) . CVPR, 2017.
 
 The total number of Trainable Parameters of the Convolutional Networks used are summarized in the table bellow.
+
 | Convolutional Network | Number of parameters |
 |--------|:--------:|
 | VGG16_bn | 117487680
@@ -259,15 +261,18 @@ The total number of Trainable Parameters of the Convolutional Networks used are 
 | ResNext50 | 25028904
 
 We study the influence of the learning rate for Architecture 1 and Cross Entropy Loss. See results bellow.
+
 | Experiment ID | Architecture | Loss | Features from | Learning Rate |Optimizer| Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | Adam | 20 | Not | Yes | Yes | 0.718 | 20   
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | SGD | 20 | Not | Yes | Yes | 0.744 | 20 
 | 13 | 1 | CELoss | VGG16's Convolutionals | 5e-4 | SGD | 20 | Not |Yes | Yes | 0.825 | 16   
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 20 | Not | Yes | Yes | **0.826** | 20  
+
 When training the network with a learning rate of 5e-4 or 1e-3 we face some problems for convergence with the Adam Optimizer, so we try the SGD Optimizer and it works better in that particular case.
 
 Finally, we train both architectures during  more epochs, with different learning rates and optimizer. See results bellow.
+
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Optimizer | Epochs | Freeze | Pretrained | Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.827 | 39   
@@ -277,6 +282,7 @@ Finally, we train both architectures during  more epochs, with different learnin
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.835 | 28
 | 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35
 | 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35
+
 **The best results are obtained for architecture 2, extracting the features with ResNext50 pretrained on Imagenet and  minimizing the CosineEmbeddingLoss. Getting a validation accuracy of 0.845 and a test accuracy of 0.859.**
 
 ## Conclusions
@@ -316,5 +322,5 @@ From the conclusions obtained, the next logical steps would be:
 [^8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjY3ODAyODddfQ==
+eyJoaXN0b3J5IjpbLTE1ODQwNjgxMSwtMjEyNjc4MDI4N119
 -->
