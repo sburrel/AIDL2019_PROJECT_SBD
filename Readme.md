@@ -342,5 +342,5 @@ From the conclusions obtained, the next logical steps would be:
 [^8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3MjgwMzE5LC0yMTI2NzgwMjg3XX0=
+eyJoaXN0b3J5IjpbMjc3MjgwMzE5XX0=
 -->
