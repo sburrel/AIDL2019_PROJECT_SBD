@@ -284,7 +284,7 @@ We study the influence of the learning rate for Architecture 1 and Cross Entropy
 | 13 | 1 | CELoss | VGG16's Convolutionals | 5e-4 | SGD | 20 | Not |Yes | Yes | 0.825 | 16   
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 20 | Not | Yes | Yes | **0.826** | 20  
 
-When training the network with a learning rate of 5e-4 or 1e-3 we face some problems for convergence with the Adam Optimizer, so we try the SGD Optimizer and it works better in that particular case.
+When training the network with a learning rate of 5e-4 or 1e-3, some problems for convergence with the Adam Optimizer have been encountered. So the SGD Optimizer and it works better in that particular case.
 
 Finally, we train both architectures during  more epochs, with different learning rates and optimizer. See results bellow.
 
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MjM3Njc0NSwzMzgzNjA5MzEsLTE0OD
-ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
-LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
-UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTEzNjUyMTQzMDEsMzM4MzYwOTMxLC0xND
+gxMTc0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3
+LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLD
+E1MjM2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
 -->
