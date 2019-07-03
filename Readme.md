@@ -324,12 +324,13 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables, where all the parameters are summarized. Be careful to update all the paths and necessary parameters when needed.
 
 ### Demo
-
+A Demo has 
+To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
 
 
 ### Folders structure
 There are for main folders:
-- [Demo]() : Contains the demo's collaboratory notebook. To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
+- [Demo]() : Contains the demo's collaboratory notebook. 
 - [Experiments](): Contains a folder for each one of the notebook's versions described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
 - [Figures](): Contains the images displayed at the present Readme.
 - [dataset-cfp](): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
@@ -363,8 +364,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODExNzQxMzcsNDY3NjU2Mzk2LDU0NT
-A5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3ODcsLTE2ODcwNTg2
-ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC
-04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbMTE0NDQxNTcwMSwtMTQ4MTE3NDEzNyw0Nj
+c2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4
+NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC
+05NDA4MTI0MTUsLTg2MTc0NDI0MV19
 -->
