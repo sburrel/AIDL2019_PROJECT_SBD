@@ -149,7 +149,7 @@ class SiameseCosine(nn.Module):
 #### Architecture 2 during testing or inference
 
 ![Architecture 2 during testing or inference](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2_test.png?raw=true)
-To obtain the threshold, first all the cosine similarities for the pairs of images in the validation test  are computed. From them, the 5 percentile for same identities pairs of images and  the 95 percentile for different identities pairs of images are extrected. Second, we calculate the threshold (with only one decimal precision) between the 5 percentile for same identities pairs of images and 95 percentile for different identities pairs of images. To obtain the threshold with the second and the third decimal precision, we iterate between the threshold obtained previously plus/minus half of its precision with increments of one unit of the new precision. For more clarity, the sniped code is included bellow.
+To obtain the threshold, first all the cosine similarities for the pairs of images in the validation test  are computed. From them, the 5th percentile for same identities pairs of images and  the 95th percentile for different identities pairs of images are obtained. Second, the threshold (with only one decimal precision) between the 5th percentile for same identities pairs of images and 95th percentile for different identities pairs of images its . To obtain the threshold with the second and the third decimal precision, we iterate between the threshold obtained previously plus/minus half of its precision with increments of one unit of the new precision. For more clarity, the sniped code is included bellow.
 
 ```javascript
 import numpy as np
@@ -363,7 +363,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NDAzODY4NywzMzgzNjA5MzEsLTE0OD
+eyJoaXN0b3J5IjpbMjA5ODM2NTgzNSwzMzgzNjA5MzEsLTE0OD
 ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
 LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
 UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
