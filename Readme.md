@@ -213,12 +213,12 @@ The following parameters/strategies have been studied in order to see its influe
 
 The Data augmentation implemented consists on [horizontal flips](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomHorizontalFlip) and [random rotations](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomRotation) of +20 and -20 degrees.
 
-For the first architecture we have studied the influence of having a single output (vector of dimension 1) at the end of the network and using [Binary Cross Entropy Loss](https://pytorch.org/docs/stable/nn.html#torch.nn.BCELoss) or  having two outputs (vector of dimension 2) and optimizing the [Cross Entropy Loss](https://pytorch.org/docs/stable/nn.html#crossentropyloss).
+For the first architecture it has been studied the influence of having a single output (vector of dimension 1) at the end of the network and using [Binary Cross Entropy Loss](https://pytorch.org/docs/stable/nn.html#torch.nn.BCELoss) or  having two outputs (vector of dimension 2) and optimizing the [Cross Entropy Loss](https://pytorch.org/docs/stable/nn.html#crossentropyloss).
 
-For the second architecture we have used the [Cosine Embedding Loss](https://pytorch.org/docs/stable/nn.html#cosineembeddingloss). It's a cosine margin based loss that learns to discriminate face features in terms of angular similarity of the feature vectors.
+For the second architecture, the [Cosine Embedding Loss](https://pytorch.org/docs/stable/nn.html#cosineembeddingloss) has been used. It's a cosine margin based loss that learns to discriminate face features in terms of angular similarity of the feature vectors.
  
 ### Results Obtained
-We start studying the influence of data augmentation and the use or not of the pretrained weights at the convolutional network for Architecture 1 and Binary Cross Entropy Loss (see results bellow).
+The first experiments are pWe start studying the influence of data augmentation and the use or not of the pretrained weights at the convolutional network for Architecture 1 and Binary Cross Entropy Loss (see results bellow).
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -363,7 +363,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUxOTUwLDMzODM2MDkzMSwtMTQ4MT
+eyJoaXN0b3J5IjpbNjA2OTIwODAwLDMzODM2MDkzMSwtMTQ4MT
 E3NDEzNyw0Njc2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywt
 MTU5ODIzNjc4NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNT
 IzNjU4MjQ3LC05NDA4MTI0MTUsLTg2MTc0NDI0MV19
