@@ -235,13 +235,13 @@ Better results are obtained when the training starts with the pretrained weights
 
 We continue, exploring the influence of data augmentation ( see results bellow).
 
-| Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
-|:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| 11 | 1 |  CELoss | VGG16's Convolutionals | 1e-4 | 20 | Not | Yes | Not | 0.793 | 11 
-| 13 | 1 |  CELoss | VGG16's Convolutionals | 1e-4 | 14 | Not | Yes | Yes | **0.803** | 11   
-| 15 | 1 | CELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 20 | Not | Yes | Not | 0.772 | 14
-| 17 | 1 | CELoss | VGG16's Convolutionals + Linear layerr | 1e-4 | 14 | Not | Yes | Yes | 0.710 | 13
-| 21 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | Not | Yes | Not | 0.807 | 9
+| Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch | Threshold |
+|:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| 11 | 1 |  CELoss | VGG16's Convolutionals | 1e-4 | 20 | Not | Yes | Not | 0.793 | 11 | Not
+| 13 | 1 |  CELoss | VGG16's Convolutionals | 1e-4 | 14 | Not | Yes | Yes | **0.803** | 11  | Not  
+| 15 | 1 | CELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 20 | Not | Yes | Not | 0.772 | 14  | Not
+| 17 | 1 | CELoss | VGG16's Convolutionals + Linear layerr | 1e-4 | 14 | Not | Yes | Yes | 0.710 | 13  | Not
+| 21 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | Not | Yes | Not | 0.807 | 9 |
 | 21 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 5e-4 | 14 | Not | Yes | Not | 0.708 | 11
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | Not | Yes | Yes | **0.821** | 12    
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 5e-4 | 14 | Not | Yes | Yes | 0.709 | 14 
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODI4MDU3OTMsLTE0ODExNzQxMzcsND
-Y3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3
-ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0Ny
-wtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbNTYwNTMwNTcyLC0xNDgxMTc0MTM3LDQ2Nz
+Y1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3LC0xNTk4MjM2Nzg3
+LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLT
+k0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
 -->
