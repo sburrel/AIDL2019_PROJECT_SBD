@@ -292,7 +292,7 @@ Finally, we train both architectures during  more epochs, with different learnin
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.827 | 39   
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | SGD | 40 | Not | Yes | Yes | 0.805 | 39
-| 13 | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.832 | 33
+| [13](https://drive.google.com/open?id=1YBo9EVCO1SRKRzzkKyqCUGVFgpKePzTS) | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.832 | 33
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.832 | 17
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.835 | 28
 | 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35
@@ -349,6 +349,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM2NjE1NzMsLTk0MDgxMjQxNSwtOD
-YxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbMjc5NzMyNjI4LC05NDA4MTI0MTUsLTg2MT
+c0NDI0MV19
 -->
