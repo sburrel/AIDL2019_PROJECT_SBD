@@ -218,7 +218,7 @@ For the first architecture it has been studied the influence of having a single 
 For the second architecture, the [Cosine Embedding Loss](https://pytorch.org/docs/stable/nn.html#cosineembeddingloss) has been used. It's a cosine margin based loss that learns to discriminate face features in terms of angular similarity of the feature vectors.
  
 ### Results Obtained
-The first experiments are pWe start studying the influence of data augmentation and the use or not of the pretrained weights at the convolutional network for Architecture 1 and Binary Cross Entropy Loss (see results bellow).
+The first experiments are performed in order to study the influence of data augmentation and the use or not of the pretrained weights at the convolutional network for Architecture 1 and Binary Cross Entropy Loss (see results bellow).
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -233,7 +233,7 @@ The first experiments are pWe start studying the influence of data augmentation 
 
 Better results are obtained when the training starts with the pretrained weights of the convolutional network.
 
-We continue, exploring the influence of data augmentation ( see results bellow).
+More experiments are executed to see the influence of data augmentation ( see results bellow).
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -249,7 +249,7 @@ We continue, exploring the influence of data augmentation ( see results bellow).
 Data augmentation increases accuracy around 1% when the input features of the decision network are extracted from the convolutional layers of the VGG16 and the Cross Entropy Loss is used.
 Data augmentation increases accuracy around 2% when the features are extracted from the convolutional layers of the VGG16 and the Cosine Embedding Loss is used, without freezing any layers.
 
-We try to fine tune only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% . See table bellow.
+One We try to fine tune only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% . See table bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2OTIwODAwLDMzODM2MDkzMSwtMTQ4MT
-E3NDEzNyw0Njc2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywt
-MTU5ODIzNjc4NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNT
-IzNjU4MjQ3LC05NDA4MTI0MTUsLTg2MTc0NDI0MV19
+eyJoaXN0b3J5IjpbNjA3NTg2ODMsMzM4MzYwOTMxLC0xNDgxMT
+c0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3LC0x
+NTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLDE1Mj
+M2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
 -->
