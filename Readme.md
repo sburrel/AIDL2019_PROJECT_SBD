@@ -309,10 +309,11 @@ With the architectures implemented to perform the face verification task and fro
 - The best results are obtained when during training we directly optimize a loss relevant to the task, like the Architecture 2 with the CosineEmbeddingLoss.
 - ResNext50 is a better feature extractor for the verification task than VGG16, ResNet50 and ResNet101.
 
-## Getting familiar with the repo
+## Getting familiar with the repository
 ### Folders structure
-### How to reproduce the experiments
 
+
+### How to reproduce the experiments
 All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
 - Version 1: Architecture 1 with CELoss. Best results obtained for experiment
 -  Version 2: Architecture 1 with BCELoss. Best results obtained for experiment [13](https://drive.google.com/open?id=1YBo9EVCO1SRKRzzkKyqCUGVFgpKePzTS).
@@ -354,7 +355,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODkyOTY3NywtMTU5ODIzNjc4NywtMT
-Y4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC05NDA4
-MTI0MTUsLTg2MTc0NDI0MV19
+eyJoaXN0b3J5IjpbMTE5NzE2NTM3LC0xNTk4MjM2Nzg3LC0xNj
+g3MDU4Njg0LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLTk0MDgx
+MjQxNSwtODYxNzQ0MjQxXX0=
 -->
