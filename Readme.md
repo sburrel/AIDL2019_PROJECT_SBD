@@ -319,7 +319,7 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor. Best results obtained for experiment  [43](https://drive.google.com/open?id=1-3Ahtzf5r7-CxqQIVCDh_DuQKEd45LlI).
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet101 as feature extractor. Best results obtained for experiment  [53](https://drive.google.com/open?id=1-4p-P33YvMwFG6B0_iH1jVI_w3SLhYdf).
 - Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. Best results obtained for experiment [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
-You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables, where all the parameters are summarized.
+You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables, where all the parameters are summarized. Be careful to update all the paths and necessary parameters when needed.
 
 ## TO DO
 
@@ -350,7 +350,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLT
-IxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3
-NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTEyNjA5ODc5NjMsLTE1OTgyMzY3ODcsLT
+E2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQw
+ODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
