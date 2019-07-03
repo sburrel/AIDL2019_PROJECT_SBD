@@ -364,5 +364,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5MjQxMDIzLC0yNzcyNDA3MjldfQ==
+eyJoaXN0b3J5IjpbNTk5MjQxMDIzXX0=
 -->
