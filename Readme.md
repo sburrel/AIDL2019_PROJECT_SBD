@@ -70,7 +70,7 @@ class SiameseDecision(nn.Module):
 
 
 #### Architecture 1, variation
-A slight variation of the first architecture has been studied too. Moving one of the fully connected layers to the Siamese's Networks to extract a more compact representation of the features.
+A slight variation of the first architecture is studied too. Moving one of the fully connected layers to the Siamese's Networks to extract a more compact representation of the features.
 
 ![Architecture 1, variation](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1_var.png?raw=true)
 Below, it's include, as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjM2NTA3MDMsMzM4MzYwOTMxLC0xND
-gxMTc0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3
-LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLD
-E1MjM2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbLTM4MTAxMTQxNSwzMzgzNjA5MzEsLTE0OD
+ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
+LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
+UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
