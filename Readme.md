@@ -275,7 +275,7 @@ The total number of Trainable Parameters of the Convolutional Networks used are 
 | ResNet101 | 44549160
 | ResNext50 | 25028904
 
-We study the influence of the learning rate for Architecture 1 and Cross Entropy Loss. See results bellow.
+The influence of the learning rate is studied for Architecture 1 and Cross Entropy Loss. See results bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate |Optimizer| Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -363,5 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NzI0MDcyOV19
+eyJoaXN0b3J5IjpbLTIyNDY1NzMyMiwtMjc3MjQwNzI5XX0=
 -->
