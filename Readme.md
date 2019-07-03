@@ -249,13 +249,13 @@ More experiments are executed to see the influence of data augmentation ( see re
 Data augmentation increases accuracy around 1% when the input features of the decision network are extracted from the convolutional layers of the VGG16 and the Cross Entropy Loss is used.
 Data augmentation increases accuracy around 2% when the features are extracted from the convolutional layers of the VGG16 and the Cosine Embedding Loss is used, without freezing any layers.
 
-One We try to fine tune only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% . See table bellow.
+One experiment is performed fine tuning only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% . See table bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% | Yes | Yes | 0.746 | 13 | 0.779
-        
-We try different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2. See results bellow.
+
+ A series of experiments with different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2. See results bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3NTg2ODMsMzM4MzYwOTMxLC0xNDgxMT
-c0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3LC0x
-NTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLDE1Mj
-M2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbLTU3Mzg2NTcxMywzMzgzNjA5MzEsLTE0OD
+ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
+LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
+UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
