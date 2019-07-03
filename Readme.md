@@ -251,15 +251,15 @@ Data augmentation increases accuracy around 2% when the features are extracted f
 
 We try to fine tune only half of the layers of the VGG16 instead of training the whole network for Architecture 2 and the validation accuracy drops around 9% . See table bellow.
 
-| Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
-|:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% | Yes | Yes | 0.746 | 13
+| Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch | Threshold |
+|:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% | Yes | Yes | 0.746 | 13 | 0.779
         
 We try different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2. See results bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 9
+| 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.821 | 12 | 0.709
 | [43](https://drive.google.com/open?id=1-3Ahtzf5r7-CxqQIVCDh_DuQKEd45LlI) | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7 | 0.771
 | [53](https://drive.google.com/open?id=1-4p-P33YvMwFG6B0_iH1jVI_w3SLhYdf) | 2 | CosineEmbeddingLoss | [ResNet101](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet101) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 14 | 0.736
 | 63 | 2 | CosineEmbeddingLoss | [ResNext50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnext50_32x4d)| 1e-4 | 14 | Not | Yes | Yes | **0.826** | 12 |0.696
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTY1MzEwOSwtMTQ4MTE3NDEzNyw0Nj
-c2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4
-NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC
-05NDA4MTI0MTUsLTg2MTc0NDI0MV19
+eyJoaXN0b3J5IjpbLTE1ODI4MDU3OTMsLTE0ODExNzQxMzcsND
+Y3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3
+ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0Ny
+wtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
