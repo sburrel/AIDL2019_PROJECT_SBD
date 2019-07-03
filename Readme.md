@@ -329,7 +329,7 @@ To execute the demo you have to download the data set and the weights of experim
 
 ### Folders structure
 There are four main folders:
-- [Demo]() : Contains the demo's collaboratory notebook. 
+- [Demo](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Demo) : Contains the demo's collaboratory notebook. 
 - [Experiments](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Experiments): Contains a folder for each one of the notebook's versions described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
 - [Figures](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Figures): Contains the images displayed at the present Readme.
 - [dataset-cfp](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/dataset-cfp): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
@@ -363,5 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0Nzg5NTQyMV19
+eyJoaXN0b3J5IjpbMzAzOTAxOTU5LC0yNDc4OTU0MjFdfQ==
 -->
