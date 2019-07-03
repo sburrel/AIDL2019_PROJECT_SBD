@@ -312,13 +312,13 @@ With the architectures implemented to perform the face verification task and fro
 ## How to reproduce the experiments
 
 All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
-- Version 1: Architecture 1 with CELoss.
--  Version 2: Architecture 1 with BCELoss. 
--  Version 3: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor
-- Version 4: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor, freezing the half bottom layers
-- Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor
-- Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet101 as feature extractor
-- Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. 
+- Version 1: Architecture 1 with CELoss. Best results obtained for experiment
+-  Version 2: Architecture 1 with BCELoss. Best results obtained for experiment
+-  Version 3: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor. Best results obtained for experiment
+- Version 4: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor, freezing the half bottom layers.  Best results obtained for experiment [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO).
+- Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor. Best results obtained for experiment
+- Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet101 as feature extractor. Best results obtained for experiment
+- Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. Best results obtained for experiment
 You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables.
 
 ## TO DO
@@ -350,6 +350,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzY1ODI0NywtOTQwODEyNDE1LC04Nj
-E3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTEzNzQ1MjI5MDEsMTUyMzY1ODI0NywtOT
+QwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
