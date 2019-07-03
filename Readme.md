@@ -325,14 +325,14 @@ You can find a link to download the weights of the experiment that has the best 
 
 ### Demo
 A Demo has been realized for version 7. The best results are obtained for this version at experiment 63. The Demo includes only the inference code and allows you to see the results obtained. You can visualize the predicted label the real label and the two images compared.
-To execute the demo you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).  Be careful to update all the paths if needed. If you want to test different experiments be careful to set up the correct threshold.
+To execute the demo you have to download the data set and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).  Be careful to update all the paths if needed. If you want to test different experiments be careful to set up the correct threshold.
 
 ### Folders structure
 There are for main folders:
 - [Demo]() : Contains the demo's collaboratory notebook. 
-- [Experiments](): Contains a folder for each one of the notebook's versions described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
-- [Figures](): Contains the images displayed at the present Readme.
-- [dataset-cfp](): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
+- [Experiments](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Experiments): Contains a folder for each one of the notebook's versions described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
+- [Figures](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Figures): Contains the images displayed at the present Readme.
+- [dataset-cfp](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/dataset-cfp): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
 
 ## TO DO
 
@@ -363,7 +363,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDIwNTc4MiwtMTQ4MTE3NDEzNyw0Nj
+eyJoaXN0b3J5IjpbLTYwODkzODQwMCwtMTQ4MTE3NDEzNyw0Nj
 c2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4
 NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC
 05NDA4MTI0MTUsLTg2MTc0NDI0MV19
