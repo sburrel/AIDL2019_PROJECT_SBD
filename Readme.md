@@ -314,13 +314,13 @@ With the architectures implemented to perform the face recognition task and from
 -  Freezing half of the layers is not beneficial.
 - Data augmentation increases accuracy and leads to a better behavior of the validation loss during training. The training plots can be found in each one of the experiment's folders.
 - When facing problems during training with one optimizer like Adam, SGD (although being slower) can get better results.
-- The best results are obtained when during training we directly optimize a loss relevant to the task, like the Architecture 2 with the CosineEmbeddingLoss.
+- The best results are obtained when during training it is optimized directly a loss relevant to the task, like the Architecture 2 with the CosineEmbeddingLoss.
 - ResNext50 is a better feature extractor for the verification task than VGG16, ResNet50 and ResNet101.
 
 ## Getting familiar with the repository
 
 ### How to reproduce the experiments
-All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
+All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that are summarized bellow:
 - Version 1: Architecture 1 with CELoss. Best results obtained for experiment [07](https://drive.google.com/open?id=1LJJ9nS2pwngqalRW1mOuUSiC4lvMm7eh).
 -  Version 2: Architecture 1 with BCELoss. Best results obtained for experiment [13](https://drive.google.com/open?id=1YBo9EVCO1SRKRzzkKyqCUGVFgpKePzTS).
 -  Version 3: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor. Best results obtained for experiment [23](https://drive.google.com/open?id=1YwPhbOXRJE0WGSNrHaviHakgxJJ4xRRL).
@@ -364,5 +364,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTU5Mzg4MiwtMjc3MjQwNzI5XX0=
+eyJoaXN0b3J5IjpbNTk5MjQxMDIzLC0yNzcyNDA3MjldfQ==
 -->
