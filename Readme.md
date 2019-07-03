@@ -318,8 +318,8 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 - Version 4: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor, freezing the half bottom layers.  Best results obtained for experiment [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO).
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor. Best results obtained for experiment
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet101 as feature extractor. Best results obtained for experiment
-- Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. Best results obtained for experiment
-You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables.
+- Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. Best results obtained for experiment[63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq.
+You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables, where all the parameters are summarized.
 
 ## TO DO
 
@@ -350,6 +350,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ1MjI5MDEsMTUyMzY1ODI0NywtOT
-QwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbMTU5NzA0MDY5MCwxNTIzNjU4MjQ3LC05ND
+A4MTI0MTUsLTg2MTc0NDI0MV19
 -->
