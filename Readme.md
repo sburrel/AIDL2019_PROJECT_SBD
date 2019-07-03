@@ -328,7 +328,7 @@ From the conclusions obtained, the next logical steps would be:
 1. Try ResNext101 as feature extractor.
 2. Implement ROC analisys and mesure the true accept rate (TAR), which is the fraction of genuine comparisons that correctly exceed the threshold, and the false accept rate (FAR), which is the fraction of impostor comparisons that incorrectly exceed the threshold.
 3. Implement the normalization step on features and weights and the ArcFace loss as explained in Deng et al.[7] The authors report a 95.6% accuracy on CFP dataset. 
-4. Increase Data Augmentation. The last papers use GAN's to perform "one-to-many augmentation" and "many-to-one-normalization"[8] .
+4. Increase Data Augmentation. The last papers use GAN's to perform "one-to-many augmentation" and "many-to-one-normalization", see reference [8] .
 
 ## References
 [1]: S. Sengupta, J.C. Cheng, C.D. Castillo, V.M. Patel, R. Chellappa and  D.W. Jacobs.  ["Frontal to Profile Face Verification in the Wild"](http://www.cfpw.io/paper.pdf). IEEE Conference on Applications of Computer Vision, 2016.
@@ -342,5 +342,5 @@ From the conclusions obtained, the next logical steps would be:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MjI1MDM0Myw5OTUxMzcwODNdfQ==
+eyJoaXN0b3J5IjpbODEzOTEzOTgxLDk5NTEzNzA4M119
 -->
