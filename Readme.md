@@ -19,7 +19,7 @@ In order to perform the verification task each one of the images passes through 
 1. Use a Decision Network to classify the two images as belonging to the same or different identity.
 2. Use a Loss Function that compresses intra-variance (same identity) and enlarges inter-variance (different identities).
 
-![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses1.png?raw=true)![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses2.png?raw=true)
+![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses1_v2.png?raw=true)![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses2_v2.png?raw=true)
 
 ### Architecture 1
 
@@ -350,6 +350,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOT
-QwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
+UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
