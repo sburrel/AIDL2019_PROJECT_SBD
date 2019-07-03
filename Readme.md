@@ -310,12 +310,6 @@ With the architectures implemented to perform the face verification task and fro
 - ResNext50 is a better feature extractor for the verification task than VGG16, ResNet50 and ResNet101.
 
 ## Getting familiar with the repository
-### Folders structure
-There are for main folders:
-- [Demo]() : Contains the demo's collaboratory notebook. To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
-- [Experiments]()
-- [Figures]()
-- [dataset-cfp]()
 
 ### How to reproduce the experiments
 All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
@@ -328,6 +322,13 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 - Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. Best results obtained for experiment [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
 
 You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables, where all the parameters are summarized. Be careful to update all the paths and necessary parameters when needed.
+
+### Folders structure
+There are for main folders:
+- [Demo]() : Contains the demo's collaboratory notebook. To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
+- [Experiments](): Contains a folder for each one of the notebook's versions described above. 
+- [Figures]()
+- [dataset-cfp]()
 
 ### Demo
 
@@ -360,8 +361,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczNjMxMjk5LDQ2NzY1NjM5Niw1NDUwOT
-k3NzAsMTE5NzE2NTM3LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0
-LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLTk0MDgxMjQxNSwtOD
-YxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbLTIwMTc5OTEzMjUsNDY3NjU2Mzk2LDU0NT
+A5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3ODcsLTE2ODcwNTg2
+ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC
+04NjE3NDQyNDFdfQ==
 -->
