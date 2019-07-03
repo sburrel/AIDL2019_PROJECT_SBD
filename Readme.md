@@ -15,7 +15,7 @@ The used data set is Celebrities in Frontal-Profile. The data set contains 10 fr
 As Sengupta et al. [1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
 
 ## Implemented  Arquitectures
-In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. The convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification) have been used  for the Siamese's Networks. With the features extracted from the Siamese's Networks, two different strategies:
+In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. The convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification) have been used  for the Siamese's Networks. With the features extracted from the Siamese's Networks, two different strategies are explored:
 1. Use a Decision Network to classify the two images as belonging to the same or different identity.
 2. Use a Loss Function that compresses intra-variance (same identity) and enlarges inter-variance (different identities).
 
@@ -24,7 +24,7 @@ In order to perform the verification task each one of the images passes through 
 ### Architecture 1
 
 ![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1.png?raw=true)
-Next, we include , as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
+Next, it's include , as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
 import torch
@@ -70,10 +70,10 @@ class SiameseDecision(nn.Module):
 
 
 #### Architecture 1, variation
-We explore a slight variation of the first architecture, moving one of the fully connected layers to the Siamese's Networks to extract a more compact representation of the features.
+A slight variation of the first architecture has been studied too. Moving one of the fully connected layers to the Siamese's Networks to extract a more compact representation of the features.
 
 ![Architecture 1, variation](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1_var.png?raw=true)
-Below, we include, as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
+Below, it's include, as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
 class SiameseLinearDecision(nn.Module):
@@ -114,7 +114,7 @@ class SiameseLinearDecision(nn.Module):
 ### Architecture 2
 
 ![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2.png?raw=true)
-Next, we include, as an example, the code sniped with the implemented model at version 7 (all the versions are described in paragraph: How to reproduce the experiments).
+Next, it's include, as an example, the code sniped with the implemented model at version 7 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
 import torch
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTYxMzU2MCwzMzgzNjA5MzEsLTE0OD
-ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
-LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
-UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbMjU4ODI0Nzg3LDMzODM2MDkzMSwtMTQ4MT
+E3NDEzNyw0Njc2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywt
+MTU5ODIzNjc4NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNT
+IzNjU4MjQ3LC05NDA4MTI0MTUsLTg2MTc0NDI0MV19
 -->
