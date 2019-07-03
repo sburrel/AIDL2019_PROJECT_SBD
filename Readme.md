@@ -1,4 +1,4 @@
-# Person Recognition
+
 ## Repository Structure
 There are four main folders:
 - [Demo](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Demo) : Contains the demo's collaboratory notebook. 
@@ -6,6 +6,7 @@ There are four main folders:
 - [Figures](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Figures): Contains the images displayed at the present Readme.
 - [dataset-cfp](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/dataset-cfp): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
 
+# Person Recognition
 ## Main Goal
 The task that the designed neural networks  have to perform is: given two images, state if they are from the same identity or not.
 ### Same identity
@@ -363,5 +364,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4NDM5MTAsLTI3NzI0MDcyOV19
+eyJoaXN0b3J5IjpbNzgxMTkxMTcwLC0yNzcyNDA3MjldfQ==
 -->
