@@ -296,7 +296,7 @@ Finally, we train both architectures during  more epochs, with different learnin
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.832 | 17
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.835 | 28
 | 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35
-| [63]() | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35
+| [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq) | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35
 
 **The best results are obtained for architecture 2, extracting the features with ResNext50 pretrained on Imagenet and  minimizing the CosineEmbeddingLoss. Getting a validation accuracy of 0.845 and a test accuracy of 0.859.**
 
@@ -319,6 +319,7 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet101 as feature extractor
 - Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor. 
+You can find a link to download the weight 
 
 ## TO DO
 
@@ -349,6 +350,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDM3NTQ0MTIsLTk0MDgxMjQxNSwtOD
-YxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbMTU1NzUyMjg4NSwtOTQwODEyNDE1LC04Nj
+E3NDQyNDFdfQ==
 -->
