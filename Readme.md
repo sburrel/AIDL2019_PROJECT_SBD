@@ -228,7 +228,7 @@ We start studying the influence of data augmentation and the use or not of the p
 | 04 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | Not applicable | Not | Yes | 0.501 | 7
 | 05 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not | Yes | Not | 0.714 | 3
 | 06 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not applicable |Not | Not | 0.504 | 2   
-| 07 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not | Yes | Yes | 0.713 | 4
+| [07](https://drive.google.com/open?id=1LJJ9nS2pwngqalRW1mOuUSiC4lvMm7eh) | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not | Yes | Yes | 0.713 | 4
 | 08 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not applicable | Not | Yes | 0.501 |  1
 
 Better results are obtained when the training starts with the pretrained weights of the convolutional network.
@@ -313,7 +313,7 @@ With the architectures implemented to perform the face verification task and fro
 
 ### How to reproduce the experiments
 All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
-- Version 1: Architecture 1 with CELoss. Best results obtained for experiment
+- Version 1: Architecture 1 with CELoss. Best results obtained for experiment [07](https://drive.google.com/open?id=1LJJ9nS2pwngqalRW1mOuUSiC4lvMm7eh).
 -  Version 2: Architecture 1 with BCELoss. Best results obtained for experiment [13](https://drive.google.com/open?id=1YBo9EVCO1SRKRzzkKyqCUGVFgpKePzTS).
 -  Version 3: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor. Best results obtained for experiment [23](https://drive.google.com/open?id=1YwPhbOXRJE0WGSNrHaviHakgxJJ4xRRL).
 - Version 4: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor, freezing the half bottom layers.  Best results obtained for experiment [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO).
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTc3Mjk2MCw0Njc2NTYzOTYsNTQ1MD
-k5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4NywtMTY4NzA1ODY4
-NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC05NDA4MTI0MTUsLT
-g2MTc0NDI0MV19
+eyJoaXN0b3J5IjpbLTE0ODExNzQxMzcsNDY3NjU2Mzk2LDU0NT
+A5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3ODcsLTE2ODcwNTg2
+ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC
+04NjE3NDQyNDFdfQ==
 -->
