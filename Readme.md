@@ -311,7 +311,11 @@ With the architectures implemented to perform the face verification task and fro
 
 ## Getting familiar with the repository
 ### Folders structure
-There are for main folders
+There are for main folders:
+- [Demo 
+- Experiments
+- Figures
+- dataset-cfp 
 
 ### How to reproduce the experiments
 All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
@@ -356,8 +360,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTg2NDQ2NSw0Njc2NTYzOTYsNTQ1MD
-k5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4NywtMTY4NzA1ODY4
-NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC05NDA4MTI0MTUsLT
-g2MTc0NDI0MV19
+eyJoaXN0b3J5IjpbLTIwODU4Njc4LDQ2NzY1NjM5Niw1NDUwOT
+k3NzAsMTE5NzE2NTM3LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0
+LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLTk0MDgxMjQxNSwtOD
+YxNzQ0MjQxXX0=
 -->
