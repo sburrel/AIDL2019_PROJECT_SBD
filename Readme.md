@@ -253,7 +253,7 @@ We try to fine tune only half of the layers of the VGG16 instead of training the
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% bottom layers | Yes | Yes | 0.746 | 13
+| [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% | Yes | Yes | 0.746 | 13
         
 We try different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2. See results bellow.
 
@@ -350,6 +350,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
-UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLT
+IxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3
+NDQyNDFdfQ==
 -->
