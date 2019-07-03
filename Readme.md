@@ -1,4 +1,4 @@
-# Person Verification
+# Person Recognition
 ## Main Goal
 The task that the designed neural networks  have to perform is: given two images, state if they are from the same identity or not.
 ### Same identity
@@ -350,6 +350,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODY5MzkxOCwxNTIzNjU4MjQ3LC05ND
-A4MTI0MTUsLTg2MTc0NDI0MV19
+eyJoaXN0b3J5IjpbLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOT
+QwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
