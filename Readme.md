@@ -13,7 +13,6 @@ The used data set is Celebrities in Frontal-Profile. The data set contains 10 fr
 ![Sample Images from Celebrities in Frontal-Profile (CFP)](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/CFP.png?raw=true)
 
 As Sengupta et al. [^1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
-[^1]: S. Sengupta, J.C. Cheng, C.D. Castillo, V.M. Patel, R. Chellappa and  D.W. Jacobs.  ["Frontal to Profile Face Verification in the Wild"](http://www.cfpw.io/paper.pdf). IEEE Conference on Applications of Computer Vision, 2016.
 
 ## Implemented  Arquitectures
 In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. For the Siamese's Networks we use the convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification). With the features extracted from the Siamese's Networks, we explore two different strategies:
@@ -267,10 +266,6 @@ We try different Convolutional Networks[^2][^3][^4] to extract the features for 
 
 The best results are obtained with ResNext50, although  it is the network with the least number of parameters. ResNext is an architecture inspired in ResNet and Inception. It has a similar architecture to Inception, but adding the Residuals.
 
-[^2]:Karen Simonyan and Andrew Zisserman. ["Very Deep Convolutional Networks for large scale Image Recognition"](https://arxiv.org/pdf/1409.1556.pdf). ICLR, 2015.
-[^3]:He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. ["Deep residual learning for image recognition."](https://arxiv.org/pdf/1512.03385.pdf). CVPR, 2016.
-[^4]:Xie, Saining, Ross Girshick, Piotr Dollár, Zhuowen Tu, and Kaiming He.  ["Aggregated residual transformations for deep neural networks."](https://arxiv.org/pdf/1611.05431.pdf) . CVPR, 2017.
-
 The total number of Trainable Parameters of the Convolutional Networks used are summarized in the table bellow.
 
 | Convolutional Network | Number of parameters |
@@ -336,12 +331,17 @@ From the conclusions obtained, the next logical steps would be:
 3. Implement the normalization step on features and weights and the ArcFace loss as explained in Deng et al.[^7] The authors report a 95.6% accuracy on CFP dataset. 
 4. Increase Data Augmentation. The last papers use GAN's to perform "one-to-many augmentation" and "many-to-one-normalization"[^8] .
 
-[^5]: Xi Peng, Xiang Yu, Kihyuk Sohn, Dimitris N. Metaxas and Manmohan Chandraker. ["Reconstruction-Based Disentanglement for Pose-Invariant Face Recognition"](https://arxiv.org/abs/1702.03041). The IEEE International Conference on Computer Vision (ICCV), 2017, pp. 1623-1632
-[^6]: Xi Yin and Xiaoming Liu. ["Multi-Task Convolutional Neural Network forPose-Invariant Face Recognition"](https://arxiv.org/abs/1702.04710v2). TIP, 2017.
-[^7]: Jiankang Deng, Jia Guo, Niannan Xue and Stefanos Zafeiriou. ["ArcFace: Additive Angular Margin Loss for Deep Face Recognition"](https://arxiv.org/pdf/1801.07698.pdf).
-[^8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
+## References
+[1]: S. Sengupta, J.C. Cheng, C.D. Castillo, V.M. Patel, R. Chellappa and  D.W. Jacobs.  ["Frontal to Profile Face Verification in the Wild"](http://www.cfpw.io/paper.pdf). IEEE Conference on Applications of Computer Vision, 2016.
+[2]:Karen Simonyan and Andrew Zisserman. ["Very Deep Convolutional Networks for large scale Image Recognition"](https://arxiv.org/pdf/1409.1556.pdf). ICLR, 2015.
+[3]:He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. ["Deep residual learning for image recognition."](https://arxiv.org/pdf/1512.03385.pdf). CVPR, 2016.
+[4]:Xie, Saining, Ross Girshick, Piotr Dollár, Zhuowen Tu, and Kaiming He.  ["Aggregated residual transformations for deep neural networks."](https://arxiv.org/pdf/1611.05431.pdf) . CVPR, 2017.
+[5]: Xi Peng, Xiang Yu, Kihyuk Sohn, Dimitris N. Metaxas and Manmohan Chandraker. ["Reconstruction-Based Disentanglement for Pose-Invariant Face Recognition"](https://arxiv.org/abs/1702.03041). The IEEE International Conference on Computer Vision (ICCV), 2017, pp. 1623-1632
+[6]: Xi Yin and Xiaoming Liu. ["Multi-Task Convolutional Neural Network forPose-Invariant Face Recognition"](https://arxiv.org/abs/1702.04710v2). TIP, 2017.
+[7]: Jiankang Deng, Jia Guo, Niannan Xue and Stefanos Zafeiriou. ["ArcFace: Additive Angular Margin Loss for Deep Face Recognition"](https://arxiv.org/pdf/1801.07698.pdf).
+[8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1MTM3MDgzXX0=
+eyJoaXN0b3J5IjpbMTI5OTA5MTM1Myw5OTUxMzcwODNdfQ==
 -->
