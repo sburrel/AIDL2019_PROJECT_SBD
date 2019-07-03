@@ -326,7 +326,7 @@ You can find a link to download the weights of the experiment that has the best 
 ### Folders structure
 There are for main folders:
 - [Demo]() : Contains the demo's collaboratory notebook. To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
-- [Experiments](): Contains a folder for each one of the notebook's versions described above. 
+- [Experiments](): Contains a folder for each one of the notebook's versions described above. Inside this folders you can find the corresponding notebook and fo
 - [Figures]()
 - [dataset-cfp]()
 
@@ -361,8 +361,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTc5OTEzMjUsNDY3NjU2Mzk2LDU0NT
-A5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3ODcsLTE2ODcwNTg2
-ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC
-04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbMTc4MzA5NjYwOSw0Njc2NTYzOTYsNTQ1MD
+k5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4NywtMTY4NzA1ODY4
+NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC05NDA4MTI0MTUsLT
+g2MTc0NDI0MV19
 -->
