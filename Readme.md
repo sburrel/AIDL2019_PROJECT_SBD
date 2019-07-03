@@ -19,11 +19,11 @@ In order to perform the recognition task each one of the images passes through a
 1. Use a Decision Network to classify the two images as belonging to the same or different identity.
 2. Use a Loss Function that compresses intra-variance (same identity) and enlarges inter-variance (different identities).
 
-![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses1_v2.png?raw=true)![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses2_v2.png?raw=true)
+![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses1_v2.png?raw=true) ![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Siameses2_v2.png?raw=true)
 
 ### Architecture 1
 
-![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1.png?raw=true)
+![Architecture 1](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1_v2.png?raw=true)
 Next, it's include , as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
@@ -363,5 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTY0MjU4OV19
+eyJoaXN0b3J5IjpbLTIxMDI0MTE4MDIsMTgyNTY0MjU4OV19
 -->
