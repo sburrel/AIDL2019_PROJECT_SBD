@@ -296,7 +296,7 @@ Finally, we train both architectures during  more epochs, with different learnin
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.832 | 17
 | [23](https://drive.google.com/open?id=1YwPhbOXRJE0WGSNrHaviHakgxJJ4xRRL) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.835 | 28 | 0.641
 | 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35
-| [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq) | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35
+| [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq) | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35 | 0.668
 
 **The best results are obtained for architecture 2, extracting the features with ResNext50 pretrained on Imagenet and  minimizing the CosineEmbeddingLoss. Getting a validation accuracy of 0.845 and a test accuracy of 0.859.**
 
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxMTAwNzY4LC0xNDgxMTc0MTM3LDQ2Nz
-Y1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3LC0xNTk4MjM2Nzg3
-LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLT
-k0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbMTU0NTM4ODExOCwtMTQ4MTE3NDEzNyw0Nj
+c2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4
+NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC
+05NDA4MTI0MTUsLTg2MTc0NDI0MV19
 -->
