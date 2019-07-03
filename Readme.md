@@ -113,7 +113,7 @@ class SiameseLinearDecision(nn.Module):
 
 ### Architecture 2
 
-![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2.png?raw=true)
+![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2_v2.png?raw=true)
 Next, it's include, as an example, the code sniped with the implemented model at version 7 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
@@ -148,7 +148,7 @@ class SiameseCosine(nn.Module):
 
 #### Architecture 2 during testing or inference
 
-![Architecture 2 during testing or inference](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2_test.png?raw=true)
+![Architecture 2 during testing or inference](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2_test_v2.png?raw=true)
 To obtain the threshold, first all the cosine similarities for the pairs of images in the validation test  are computed. From them, the 5th percentile (for same identities pairs of images) and  the 95th percentile (for different identities pairs of images) are obtained. Second, the threshold (with only one decimal precision) between the 5th percentile (for same identities pairs of images) and 95th percentile (for different identities pairs of images) it's calculated. To obtain the threshold with the second and the third decimal precision, iterations between the threshold obtained previously plus/minus half of its precision with increments of one unit of the new precision are performed. For more clarity, the sniped code is included bellow.
 
 ```javascript
@@ -363,5 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDI0MTE4MDIsMTgyNTY0MjU4OV19
+eyJoaXN0b3J5IjpbNjYzODQ2OTI0LDE4MjU2NDI1ODldfQ==
 -->
