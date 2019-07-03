@@ -340,8 +340,8 @@ The final test accuracy obtained is 85.9%, far behind the best accuracy found in
 
 From the conclusions obtained, the next logical steps would be:
 1. Try ResNext101 as feature extractor.
-2. Implement ROC analisys and mesure the true accept rate (TAR), which is the fraction of genuine comparisons that correctly exceed the threshold, and the false accept rate (FAR), which is the fraction of impostor comparisons that incorrectly exceed the threshold.
-3. Implement the normalization step on features and weights and the ArcFace loss as explained in Deng et al.[7] The authors report a 95.6% accuracy on CFP dataset. 
+2. Implement ROC analysis and measure the true accept rate (TAR), which is the fraction of genuine comparisons that correctly exceed the threshold, and the false accept rate (FAR), which is the fraction of impostor comparisons that incorrectly exceed the threshold.
+3. Implement the normalization step on features and weights and the ArcFace loss as explained in Deng et al.[7] The authors report a 95.6% accuracy on CFP data set. 
 4. Increase Data Augmentation. The last papers use GAN's to perform "one-to-many augmentation" and "many-to-one-normalization", see reference [8] .
 
 ## References
@@ -363,9 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNTc2MjQ0LC0zODEwMTE0MTUsMzM4Mz
-YwOTMxLC0xNDgxMTc0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAs
-MTE5NzE2NTM3LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMT
-I3NjM2OTAyLDE1MjM2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0
-MjQxXX0=
+eyJoaXN0b3J5IjpbLTI0Nzg5NTQyMV19
 -->
