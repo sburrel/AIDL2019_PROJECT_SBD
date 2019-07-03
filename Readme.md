@@ -257,7 +257,7 @@ We try to fine tune only half of the layers of the VGG16 instead of training the
         
 We try different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2. See results bellow.
 
-| Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch |
+| Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch | Th
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 9
 | [43](https://drive.google.com/open?id=1-3Ahtzf5r7-CxqQIVCDh_DuQKEd45LlI) | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7
@@ -290,12 +290,12 @@ Finally, we train both architectures during  more epochs, with different learnin
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Optimizer | Epochs | Freeze | Pretrained | Data Augmentation | Validation Accuracy | Best Epoch | Threshold
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.827 | 39   
-| 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | SGD | 40 | Not | Yes | Yes | 0.805 | 39
-| [13](https://drive.google.com/open?id=1YBo9EVCO1SRKRzzkKyqCUGVFgpKePzTS) | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.832 | 33
+| 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.827 | 39 | Not  
+| 13 | 1 | CELoss | VGG16's Convolutionals | 1e-4 | SGD | 40 | Not | Yes | Yes | 0.805 | 39| Not
+| [13](https://drive.google.com/open?id=1YBo9EVCO1SRKRzzkKyqCUGVFgpKePzTS) | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.832 | 33| Not
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.832 | 17
 | [23](https://drive.google.com/open?id=1YwPhbOXRJE0WGSNrHaviHakgxJJ4xRRL) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.835 | 28 | 0.641
-| 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35
+| 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35 | 0.692
 | [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq) | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35 | 0.668
 
 **The best results are obtained for architecture 2, extracting the features with ResNext50 pretrained on Imagenet and  minimizing the CosineEmbeddingLoss. Getting a validation accuracy of 0.845 and a test accuracy of 0.859.**
@@ -363,7 +363,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTM4ODExOCwtMTQ4MTE3NDEzNyw0Nj
+eyJoaXN0b3J5IjpbMTUyMDkzMzA2MCwtMTQ4MTE3NDEzNyw0Nj
 c2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4
 NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC
 05NDA4MTI0MTUsLTg2MTc0NDI0MV19
