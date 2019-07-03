@@ -319,7 +319,6 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet101 as feature extractor
 - Version 7: Architecture 2 with CosineEmbeddingLoss and ResNext50 as feature extractor
-The checkpoint weights for the best results of each one of the different versions can be found in the corresponding folder.
 
 ## TO DO
 
@@ -343,5 +342,5 @@ From the conclusions obtained, the next logical steps would be:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTg4MzA5OSw5OTUxMzcwODNdfQ==
+eyJoaXN0b3J5IjpbMTk5MjI1MDM0Myw5OTUxMzcwODNdfQ==
 -->
