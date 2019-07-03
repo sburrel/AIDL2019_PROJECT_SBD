@@ -340,7 +340,8 @@ From the conclusions obtained, the next logical steps would be:
 [^6]: Xi Yin and Xiaoming Liu. ["Multi-Task Convolutional Neural Network forPose-Invariant Face Recognition"](https://arxiv.org/abs/1702.04710v2). TIP, 2017.
 [^7]: Jiankang Deng, Jia Guo, Niannan Xue and Stefanos Zafeiriou. ["ArcFace: Additive Angular Margin Loss for Deep Face Recognition"](https://arxiv.org/pdf/1801.07698.pdf).
 [^8]: Mei Wang and Weihong Deng. ["Deep Face Recognition: A Survey"](https://arxiv.org/pdf/1804.06655.pdf).
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjc0MDkwNzUsMjc3MjgwMzE5XX0=
+eyJoaXN0b3J5IjpbOTk1MTM3MDgzXX0=
 -->
