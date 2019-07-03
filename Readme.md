@@ -324,7 +324,7 @@ All the experiments have been performed with a Colaboratory  Notebook and are st
 You can find a link to download the weights of the experiment that has the best results for each one of the versions in the list above and also at the results tables, where all the parameters are summarized. Be careful to update all the paths and necessary parameters when needed.
 
 ### Demo
-A Demo has 
+A Demo has been realized. It includes only the inference code and allows you to see the results obtained. You can visualize the predic
 To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
 
 
@@ -364,7 +364,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDQxNTcwMSwtMTQ4MTE3NDEzNyw0Nj
+eyJoaXN0b3J5IjpbLTk4MDMxMzk1MCwtMTQ4MTE3NDEzNyw0Nj
 c2NTYzOTYsNTQ1MDk5NzcwLDExOTcxNjUzNywtMTU5ODIzNjc4
 NywtMTY4NzA1ODY4NCwtMjEyNzYzNjkwMiwxNTIzNjU4MjQ3LC
 05NDA4MTI0MTUsLTg2MTc0NDI0MV19
