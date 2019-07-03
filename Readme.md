@@ -12,7 +12,7 @@ The used data set is Celebrities in Frontal-Profile. The data set contains 10 fr
 
 ![Sample Images from Celebrities in Frontal-Profile (CFP)](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/CFP.png?raw=true)
 
-As Sengupta et al. [^1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
+As Sengupta et al. [1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
 
 ## Implemented  Arquitectures
 In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. For the Siamese's Networks we use the convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification). With the features extracted from the Siamese's Networks, we explore two different strategies:
@@ -255,7 +255,7 @@ We try to fine tune only half of the layers of the VGG16 instead of training the
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 33 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% bottom layers | Yes | Yes | 0.746 | 13
         
-We try different Convolutional Networks[^2][^3][^4] to extract the features for Architecture 2. See results bellow.
+We try different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2. See results bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -323,13 +323,13 @@ The checkpoint weights for the best results of each one of the different version
 
 ## TO DO
 
-The final test accuracy obtained is 85.9%, far behind the best accuracy found in the literature for the CFP dataset (98.7%[^5] for frontal-frontal images and 94.4%[^6] for frontal-profile images).
+The final test accuracy obtained is 85.9%, far behind the best accuracy found in the literature for the CFP dataset (98.7%[5] for frontal-frontal images and 94.4%[6] for frontal-profile images).
 
 From the conclusions obtained, the next logical steps would be:
 1. Try ResNext101 as feature extractor.
 2. Implement ROC analisys and mesure the true accept rate (TAR), which is the fraction of genuine comparisons that correctly exceed the threshold, and the false accept rate (FAR), which is the fraction of impostor comparisons that incorrectly exceed the threshold.
-3. Implement the normalization step on features and weights and the ArcFace loss as explained in Deng et al.[^7] The authors report a 95.6% accuracy on CFP dataset. 
-4. Increase Data Augmentation. The last papers use GAN's to perform "one-to-many augmentation" and "many-to-one-normalization"[^8] .
+3. Implement the normalization step on features and weights and the ArcFace loss as explained in Deng et al.[7] The authors report a 95.6% accuracy on CFP dataset. 
+4. Increase Data Augmentation. The last papers use GAN's to perform "one-to-many augmentation" and "many-to-one-normalization"[8] .
 
 ## References
 [1]: S. Sengupta, J.C. Cheng, C.D. Castillo, V.M. Patel, R. Chellappa and  D.W. Jacobs.  ["Frontal to Profile Face Verification in the Wild"](http://www.cfpw.io/paper.pdf). IEEE Conference on Applications of Computer Vision, 2016.
@@ -343,5 +343,5 @@ From the conclusions obtained, the next logical steps would be:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTA5MTM1Myw5OTUxMzcwODNdfQ==
+eyJoaXN0b3J5IjpbLTMyNTg4MzA5OSw5OTUxMzcwODNdfQ==
 -->
