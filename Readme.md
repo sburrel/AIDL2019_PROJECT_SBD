@@ -312,7 +312,7 @@ With the architectures implemented to perform the face verification task and fro
 ## Getting familiar with the repository
 ### Folders structure
 There are for main folders:
-- [Demo]() : contains the demo's collaboratory notebook
+- [Demo]() : Contains the demo's collaboratory notebook. To execute it you have to download the dataset and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).
 - [Experiments]()
 - [Figures]()
 - [dataset-cfp]()
@@ -360,8 +360,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE3NzU2MDQsNDY3NjU2Mzk2LDU0NT
-A5OTc3MCwxMTk3MTY1MzcsLTE1OTgyMzY3ODcsLTE2ODcwNTg2
-ODQsLTIxMjc2MzY5MDIsMTUyMzY1ODI0NywtOTQwODEyNDE1LC
-04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbNjczNjMxMjk5LDQ2NzY1NjM5Niw1NDUwOT
+k3NzAsMTE5NzE2NTM3LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0
+LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLTk0MDgxMjQxNSwtOD
+YxNzQ0MjQxXX0=
 -->
