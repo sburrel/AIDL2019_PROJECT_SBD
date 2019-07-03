@@ -223,13 +223,13 @@ We start studying the influence of data augmentation and the use or not of the p
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 01 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | Not | Yes | Not | 0.711 | 4
-| 02 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | - |Not | Not | 0.506 | 1   
+| 02 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | Not applicable |Not | Not | 0.506 | 1   
 | 03 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | Not | Yes | Yes | 0.709 | 6
-| 04 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | - | Not | Yes | 0.501 | 7
+| 04 | 1 | BCELoss | VGG16's Convolutionals | 1e-4 | 7 | Not applicable | Not | Yes | 0.501 | 7
 | 05 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not | Yes | Not | 0.714 | 3
-| 06 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | - |Not | Not | 0.504 | 2   
+| 06 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not applicable |Not | Not | 0.504 | 2   
 | 07 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not | Yes | Yes | 0.713 | 4
-| 08 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | - | Not | Yes | 0.501 |  1
+| 08 | 1 (variation) | BCELoss | VGG16's Convolutionals + Linear layer | 1e-4 | 7 | Not applicable | Not | Yes | 0.501 |  1
 
 Better results are obtained when the training starts with the pretrained weights of the convolutional network.
 
@@ -350,6 +350,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2NjM5NzEwLDE1MjM2NTgyNDcsLTk0MD
-gxMjQxNSwtODYxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbMTMxODY5MzkxOCwxNTIzNjU4MjQ3LC05ND
+A4MTI0MTUsLTg2MTc0NDI0MV19
 -->
