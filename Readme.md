@@ -328,7 +328,7 @@ A Demo has been realized for version 7. The best results are obtained for this v
 To execute the demo you have to download the data set and the weights of experiment  [63](https://drive.google.com/open?id=1YhukDspQyyuwr2IPuGNrODqxUejys3Dq).  Be careful to update all the paths if needed. If you want to test different experiments be careful to set up the correct threshold.
 
 ### Folders structure
-There are for main folders:
+There are four main folders:
 - [Demo]() : Contains the demo's collaboratory notebook. 
 - [Experiments](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Experiments): Contains a folder for each one of the notebook's versions described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
 - [Figures](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Figures): Contains the images displayed at the present Readme.
@@ -363,9 +363,9 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODg0MjU5OSwtMzgxMDExNDE1LDMzOD
-M2MDkzMSwtMTQ4MTE3NDEzNyw0Njc2NTYzOTYsNTQ1MDk5Nzcw
-LDExOTcxNjUzNywtMTU5ODIzNjc4NywtMTY4NzA1ODY4NCwtMj
-EyNzYzNjkwMiwxNTIzNjU4MjQ3LC05NDA4MTI0MTUsLTg2MTc0
-NDI0MV19
+eyJoaXN0b3J5IjpbLTcwNTc2MjQ0LC0zODEwMTE0MTUsMzM4Mz
+YwOTMxLC0xNDgxMTc0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAs
+MTE5NzE2NTM3LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMT
+I3NjM2OTAyLDE1MjM2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0
+MjQxXX0=
 -->
