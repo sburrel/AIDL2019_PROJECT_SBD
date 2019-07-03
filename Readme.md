@@ -260,8 +260,8 @@ We try different Convolutional Networks [2] [3] [4] to extract the features for 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 9
-| 43 | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7
-| 53 | 2 | CosineEmbeddingLoss | [ResNet101](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet101) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 14
+| [43](https://drive.google.com/open?id=1-3Ahtzf5r7-CxqQIVCDh_DuQKEd45LlI) | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7
+| [53](https://drive.google.com/open?id=1-4p-P33YvMwFG6B0_iH1jVI_w3SLhYdf) | 2 | CosineEmbeddingLoss | [ResNet101](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet101) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 14
 | 63 | 2 | CosineEmbeddingLoss | [ResNext50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnext50_32x4d)| 1e-4 | 14 | Not | Yes | Yes | **0.826** | 12
 
 The best results are obtained with ResNext50, although  it is the network with the least number of parameters. ResNext is an architecture inspired in ResNet and Inception. It has a similar architecture to Inception, but adding the Residuals.
@@ -296,7 +296,7 @@ Finally, we train both architectures during  more epochs, with different learnin
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.832 | 17
 | 23 | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-3 | SGD | 40 | Not | Yes | Yes | 0.835 | 28
 | 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-4 | Adam | 40 | Not | Yes | Yes | 0.839 | 35
-| 63 | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35
+| [63]() | 2 | CosineEmbeddingLoss | ResNext50 | 1e-3 | SGD | 40 | Not | Yes | Yes | **0.845** | 35
 
 **The best results are obtained for architecture 2, extracting the features with ResNext50 pretrained on Imagenet and  minimizing the CosineEmbeddingLoss. Getting a validation accuracy of 0.845 and a test accuracy of 0.859.**
 
@@ -349,6 +349,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDc5Mjk1NiwtOTQwODEyNDE1LC04Nj
-E3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTEwMDM3NTQ0MTIsLTk0MDgxMjQxNSwtOD
+YxNzQ0MjQxXX0=
 -->
