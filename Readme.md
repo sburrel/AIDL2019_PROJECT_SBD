@@ -313,7 +313,7 @@ With the architectures implemented to perform the face verification task and fro
 
 All the experiments have been performed with a Colaboratory  Notebook and are stored int the Experiment's folder. There are seven different versions that we summarize bellow:
 - Version 1: Architecture 1 with CELoss.
--  Version 2: Architecture 1 with BCELoss.
+-  Version 2: Architecture 1 with BCELoss. 
 -  Version 3: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor
 - Version 4: Architecture 2 with CosineEmbeddingLoss and VGG16 as feature extractor, freezing the half bottom layers
 - Version 5: Architecture 2 with CosineEmbeddingLoss and ResNet50 as feature extractor
@@ -349,6 +349,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTEzNjMzMywtOTQwODEyNDE1LC04Nj
-E3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTEzNDM2NjE1NzMsLTk0MDgxMjQxNSwtOD
+YxNzQ0MjQxXX0=
 -->
