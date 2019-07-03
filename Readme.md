@@ -342,5 +342,5 @@ From the conclusions obtained, the next logical steps would be:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEzOTEzOTgxLDk5NTEzNzA4M119
+eyJoaXN0b3J5IjpbODEzOTEzOTgxXX0=
 -->
