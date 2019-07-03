@@ -12,10 +12,10 @@ The used data set is Celebrities in Frontal-Profile. The data set contains 10 fr
 
 ![Sample Images from Celebrities in Frontal-Profile (CFP)](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/CFP.png?raw=true)
 
-As Sengupta et al. [1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
+As Sengupta et al. [1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile recognition compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
 
 ## Implemented  Arquitectures
-In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. The convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification) have been used  for the Siamese's Networks. With the features extracted from the Siamese's Networks, two different strategies are explored:
+In order to perform the recognition task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. The convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification) have been used  for the Siamese's Networks. With the features extracted from the Siamese's Networks, two different strategies are explored:
 1. Use a Decision Network to classify the two images as belonging to the same or different identity.
 2. Use a Loss Function that compresses intra-variance (same identity) and enlarges inter-variance (different identities).
 
@@ -363,5 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzOTAxOTU5XX0=
+eyJoaXN0b3J5IjpbMTgyNTY0MjU4OSwzMDM5MDE5NTldfQ==
 -->
