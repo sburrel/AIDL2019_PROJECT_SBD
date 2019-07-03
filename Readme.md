@@ -15,7 +15,7 @@ The used data set is Celebrities in Frontal-Profile. The data set contains 10 fr
 As Sengupta et al. [1] shows, many existing algorithms suffer a decrease over 10% of the accuracy in frontal-profile verification compared to  frontal-frontal. Cross-pose face recognition is still an extremely challenging scene.
 
 ## Implemented  Arquitectures
-In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. For the Siamese's Networks we use the convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification). With the features extracted from the Siamese's Networks, we explore two different strategies:
+In order to perform the verification task each one of the images passes through a **Siamese Network that that share all the weights** while working in tandem on the two different images. The convolutional layers of a [network pretrained for image classification](https://pytorch.org/docs/stable/torchvision/models.html#classification) have been used  for the Siamese's Networks. With the features extracted from the Siamese's Networks, two different strategies:
 1. Use a Decision Network to classify the two images as belonging to the same or different identity.
 2. Use a Loss Function that compresses intra-variance (same identity) and enlarges inter-variance (different identities).
 
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4MzYwOTMxLC0xNDgxMTc0MTM3LDQ2Nz
-Y1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3LC0xNTk4MjM2Nzg3
-LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLDE1MjM2NTgyNDcsLT
-k0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
+eyJoaXN0b3J5IjpbMTI1OTYxMzU2MCwzMzgzNjA5MzEsLTE0OD
+ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
+LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
+UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
 -->
