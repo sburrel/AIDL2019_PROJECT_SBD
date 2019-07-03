@@ -72,7 +72,7 @@ class SiameseDecision(nn.Module):
 #### Architecture 1, variation
 A slight variation of the first architecture is studied too. Moving one of the fully connected layers to the Siamese's Networks to extract a more compact representation of the features.
 
-![Architecture 1, variation](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1_var.png?raw=true)
+![Architecture 1, variation](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture1_var_v2.png?raw=true)
 Below, it's include, as an example, the code sniped with the implemented model at version 2 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
@@ -363,5 +363,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYzODQ2OTI0XX0=
+eyJoaXN0b3J5IjpbLTI3NzI0MDcyOSw2NjM4NDY5MjRdfQ==
 -->
