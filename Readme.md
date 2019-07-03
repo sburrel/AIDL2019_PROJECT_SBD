@@ -301,7 +301,7 @@ Finally, the architectures are trained during  more epochs, with different learn
 **The best results are obtained for architecture 2, extracting the features with ResNext50 pretrained on Imagenet and  minimizing the CosineEmbeddingLoss. Getting a validation accuracy of 0.845 and a test accuracy of 0.859.**
 
 ## Conclusions
-With the architectures implemented to perform the face verification task and from the experiments executed, we conclude that:
+With the architectures implemented to perform the face recognition task and from the experiments executed, it is concluded that:
 -  Better results are obtained when the training starts with the pretrained weights of the convolutional network.
 -  Freezing half of the layers is not beneficial.
 - Data augmentation increases accuracy and leads to a better behavior of the validation loss during training. The training plots can be found in each one of the experiment's folders.
@@ -363,8 +363,8 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MDk0MTI5MiwzMzgzNjA5MzEsLTE0OD
-ExNzQxMzcsNDY3NjU2Mzk2LDU0NTA5OTc3MCwxMTk3MTY1Mzcs
-LTE1OTgyMzY3ODcsLTE2ODcwNTg2ODQsLTIxMjc2MzY5MDIsMT
-UyMzY1ODI0NywtOTQwODEyNDE1LC04NjE3NDQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTEzMjM2NTA3MDMsMzM4MzYwOTMxLC0xND
+gxMTc0MTM3LDQ2NzY1NjM5Niw1NDUwOTk3NzAsMTE5NzE2NTM3
+LC0xNTk4MjM2Nzg3LC0xNjg3MDU4Njg0LC0yMTI3NjM2OTAyLD
+E1MjM2NTgyNDcsLTk0MDgxMjQxNSwtODYxNzQ0MjQxXX0=
 -->
