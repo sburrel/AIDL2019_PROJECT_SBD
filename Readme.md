@@ -126,7 +126,7 @@ class SiameseLinearDecision(nn.Module):
 ### Architecture 2
 
 ![Architecture 2](https://github.com/sburrel/AIDL2019_PROJECT_SBD/blob/master/Figures/Architecture2_v2.png?raw=true)
-Next, it's include, as an example, the code sniped with the implemented model at version 7 (all the versions are described in paragraph: How to reproduce the experiments).
+Next, it's included, as an example, the code sniped with the implemented model at version 7 (all the versions are described in paragraph: How to reproduce the experiments).
 
 ```javascript
 import torch
@@ -368,6 +368,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE3MjU5NTgsLTEwNzQ4NTc0MjAsMT
+eyJoaXN0b3J5IjpbLTIwMTI1NDk0NzIsLTEwNzQ4NTc0MjAsMT
 g2MjI5NDE3M119
 -->
