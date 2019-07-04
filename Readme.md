@@ -245,7 +245,7 @@ The first experiments are performed in order to study the influence of data augm
 
 Better results are obtained when the training starts with the pretrained weights of the convolutional network.
 
-More experiments are executed to see the influence of data augmentation ( see results bellow).
+More experiments are executed to understand better the influence of data augmentation ( see results bellow).
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy | Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -368,6 +368,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTI1NDk0NzIsLTEwNzQ4NTc0MjAsMT
+eyJoaXN0b3J5IjpbLTIwODk2NDc2NDksLTEwNzQ4NTc0MjAsMT
 g2MjI5NDE3M119
 -->
