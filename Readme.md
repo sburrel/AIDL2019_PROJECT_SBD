@@ -271,7 +271,7 @@ One experiment is performed fine tuning only half of the layers of the VGG16 ins
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| 23 | 2 | CosineEmbeddingLoss | [VGG16_bn](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn) | 1e-4 | 14 | Not | Yes | Yes | 0.821 | 12 | 0.709
+| 23 | 2 | CosineEmbeddingLoss | [VGG16](https://pytorch.org/docs/stable/_modules/torchvision/models/vgg.html#vgg16_bn)'s Conv + Linear Layer | 1e-4 | 14 | Not | Yes | Yes | 0.821 | 12 | 0.709
 | [43](https://drive.google.com/open?id=1-3Ahtzf5r7-CxqQIVCDh_DuQKEd45LlI) | 2 | CosineEmbeddingLoss | [ResNet50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet50)| 1e-4 | 14 | Not | Yes | Yes | 0.822 | 7 | 0.771
 | [53](https://drive.google.com/open?id=1-4p-P33YvMwFG6B0_iH1jVI_w3SLhYdf) | 2 | CosineEmbeddingLoss | [ResNet101](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnet101) | 1e-4 | 14 | Not | Yes | Yes | 0.823 | 14 | 0.736
 | 63 | 2 | CosineEmbeddingLoss | [ResNext50](https://pytorch.org/docs/stable/_modules/torchvision/models/resnet.html#resnext50_32x4d)| 1e-4 | 14 | Not | Yes | Yes | **0.826** | 12 |0.696
@@ -368,5 +368,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2MjIwMjAwLDE4NjIyOTQxNzNdfQ==
+eyJoaXN0b3J5IjpbLTE1NDkxNDAzMjQsMTg2MjI5NDE3M119
 -->
