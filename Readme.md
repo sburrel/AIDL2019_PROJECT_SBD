@@ -9,7 +9,7 @@ There are four main folders:
 # Face Recognition
 ## Motivation
 Facial recognition is a key enabling component for emerging Internet of Things (IoT) services such as smart homes or responsive offices. Through the use of deep neural networks, facial recognition has achieved excellent performance. However, this is only possibly when trained with hundreds of images of each identity in different viewing and lighting conditions. 
-In order to understand better how deep neural networks have to be designed and trained for facial recognition, I have implement different architectures and studied the influence of different parameters and strategies during training.
+In order to understand better how deep neural networks have to be designed and trained for facial recognition, different architectures have been implemented and the influence of different parameters and strategies during training have been studied.
  
 ## Main Goal
 The task that the designed neural networks  have to perform is: given two images, state if they are from the same identity or not.
@@ -368,6 +368,7 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTIzMDg3NzEsMTU5MjM4NjczNSwtMT
-Q4MTM4NjUwNyw5MjQyNTc4MjYsNTk5MjQxMDIzXX0=
+eyJoaXN0b3J5IjpbMTg2MjI5NDE3MywtMTU5MjMwODc3MSwxNT
+kyMzg2NzM1LC0xNDgxMzg2NTA3LDkyNDI1NzgyNiw1OTkyNDEw
+MjNdfQ==
 -->
