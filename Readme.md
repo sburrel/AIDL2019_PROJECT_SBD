@@ -2,7 +2,7 @@
 ## Repository Structure
 There are four main folders:
 - [Demo](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Demo) : Contains the demo's collaboratory notebook. 
-- [Experiments](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Experiments): Contains a folder for each one of the notebook's versions described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
+- [Experiments](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Experiments): Contains a folder for each one of the collaboratory notebook's version described at the previous paragraph. Inside this folders you can find the corresponding notebook and all the graphs and results of all the experiments organized by experiment ID.
 - [Figures](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Figures): Contains the images displayed at the present Readme.
 - [dataset-cfp](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/dataset-cfp): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
 
@@ -368,5 +368,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzMxODkzNDAsMTg2MjI5NDE3M119
+eyJoaXN0b3J5IjpbMTc0MDc0OTcwMCwxODYyMjk0MTczXX0=
 -->
