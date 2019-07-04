@@ -296,9 +296,9 @@ The influence of the learning rate is studied for Architecture 1 and Cross Entro
 | 13 | 1 | CELoss | VGG16's Convolutionals | 5e-4 | SGD | 20 | Not |Yes | Yes | 0.825 | 16   
 | 13 | 1 | CELoss | VGG16's Convolutionals | 1e-3 | SGD | 20 | Not | Yes | Yes | **0.826** | 20  
 
-When training the network with a learning rate of 5e-4 or 1e-3, some problems for convergence with the Adam Optimizer have been encountered. For that reason, the SGD Optimizer is used and it works better in that particular cases.
+When training the network with a learning rate of 5e-4 or 1e-3, some problems for convergence with the Adam Optimizer have been encountered. For that reason, the SGD Optimizer is used and it works better in that particular cases. Bigger learning rates speed up the training, but you 
 
-Finally, the architectures are trained during  more epochs, with different learning rates and optimizers. See results bellow.
+Finally, the architectures are trained during  more epochs, with different learning rates and optimizer. See results bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Optimizer | Epochs | Freeze | Pretrained | Data Augmentation | Validation Accuracy | Best Epoch | Threshold
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -368,6 +368,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTgyNjAxOCwtMTA3NDg1NzQyMCwxOD
-YyMjk0MTczXX0=
+eyJoaXN0b3J5IjpbLTE1MjI2MjkxNTksLTEwNzQ4NTc0MjAsMT
+g2MjI5NDE3M119
 -->
