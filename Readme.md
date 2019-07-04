@@ -314,7 +314,7 @@ Finally, the architectures are trained during  more epochs, with different learn
 
 ## Conclusions
 With the architectures implemented to perform the face recognition task and from the experiments executed, it is concluded that:
--  Better results are obtained when the training starts with the pretrained weights of the convolutional network.
+-  Better results are obtained when the training starts with the pretrained weights of the NN for feature extraction.
 -  Freezing half of the layers is not beneficial.
 - Data augmentation increases accuracy and leads to a better behavior of the validation loss during training. The training plots can be found in each one of the experiment's folders.
 - When facing problems during training with one optimizer like Adam, SGD (although being slower) can get better results.
@@ -368,6 +368,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MDgzOTg2MCwtMTA3NDg1NzQyMCwxOD
-YyMjk0MTczXX0=
+eyJoaXN0b3J5IjpbLTIwNzAxMDI2NDUsLTEwNzQ4NTc0MjAsMT
+g2MjI5NDE3M119
 -->
