@@ -6,7 +6,9 @@ There are four main folders:
 - [Figures](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/Figures): Contains the images displayed at the present Readme.
 - [dataset-cfp](https://github.com/sburrel/AIDL2019_PROJECT_SBD/tree/master/dataset-cfp): Contains the data set. You have to download it in order to reproduce the experiments or execute the Demo.
 
-# Person Recognition
+# Face Recognition
+## Motivation
+Facial recognition is a key enabling component for emerging Internet of Things (IoT)services such as 
 ## Main Goal
 The task that the designed neural networks  have to perform is: given two images, state if they are from the same identity or not.
 ### Same identity
@@ -364,5 +366,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0MjU3ODI2LDU5OTI0MTAyM119
+eyJoaXN0b3J5IjpbLTEyNzM3NTAyNjIsOTI0MjU3ODI2LDU5OT
+I0MTAyM119
 -->
