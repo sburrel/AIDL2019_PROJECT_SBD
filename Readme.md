@@ -267,7 +267,7 @@ One experiment is performed fine tuning only half of the layers of the VGG16 ins
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | [33](https://drive.google.com/open?id=1KZa1biAASPTvknJrGmOQg8zixsKlLOGO) | 2 | CosineEmbeddingLoss | VGG16's Convolutionals | 1e-4 | 14 | 50% | Yes | Yes | 0.746 | 13 | 0.779
 
- A series of experiments, with different Convolutional Networks [2] [3] [4] to extract the features for Architecture 2, are performed. See results bellow.
+ A series of experiments, with different Neural Networks [2] [3] [4] to extract the features for Architecture 2, are performed. See results bellow.
 
 | Experiment ID | Architecture | Loss | Features from | Learning Rate | Epochs | Freeze | Pretrained |Data Augmentation | Validation Accuracy |Best Epoch | Threshold |
 |:--------:| :--------:| :--------:| :--------:| :--------:| :--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
@@ -278,11 +278,11 @@ One experiment is performed fine tuning only half of the layers of the VGG16 ins
 
 The best results are obtained with ResNext50, although  it is the network with the least number of parameters. ResNext is an architecture inspired in ResNet and Inception. It has a similar architecture to Inception, but adding the Residuals.
 
-The total number of Trainable Parameters of the Convolutional Networks used are summarized in the table bellow.
+The total number of Trainable Parameters of the Neural Networks used for feature extraction are summarized in the table bellow.
 
 | Convolutional Network | Number of parameters |
 |--------|:--------:|
-| VGG16_bn | 117487680
+| VGG16's Conv + Linear Layer | 117487680
 | ResNet50 | 25557032
 | ResNet101 | 44549160
 | ResNext50 | 25028904
@@ -368,5 +368,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDkxNDAzMjQsMTg2MjI5NDE3M119
+eyJoaXN0b3J5IjpbNjMxNTYyNzY4LDE4NjIyOTQxNzNdfQ==
 -->
