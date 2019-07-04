@@ -368,7 +368,5 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MjI5NDE3MywtMTU5MjMwODc3MSwxNT
-kyMzg2NzM1LC0xNDgxMzg2NTA3LDkyNDI1NzgyNiw1OTkyNDEw
-MjNdfQ==
+eyJoaXN0b3J5IjpbMTg2MjI5NDE3M119
 -->
