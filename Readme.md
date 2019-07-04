@@ -9,7 +9,7 @@ There are four main folders:
 # Face Recognition
 ## Motivation
 Facial recognition is a key enabling component for emerging Internet of Things (IoT) services such as smart homes or responsive offices. Through the use of deep neural networks, facial recognition has achieved excellent performance. However, this is only possibly when trained with hundreds of images of each identity in different viewing and lighting conditions. 
-p
+implement different architectures of deep neural networks and study the influence of different parameters and stre
 ## Main Goal
 The task that the designed neural networks  have to perform is: given two images, state if they are from the same identity or not.
 ### Same identity
@@ -367,6 +367,6 @@ From the conclusions obtained, the next logical steps would be:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzk1NDQzOSwxNTkyMzg2NzM1LC0xND
+eyJoaXN0b3J5IjpbLTM2ODMwNjYzNSwxNTkyMzg2NzM1LC0xND
 gxMzg2NTA3LDkyNDI1NzgyNiw1OTkyNDEwMjNdfQ==
 -->
